@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contenidoCursos">
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/fondomenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/barra"
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+
+        android:background="@color/barramenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/campana" />
+
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/buttonBarButtonStyle"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuario2" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bordebuscador"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="@+id/view9"
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintTop_toTopOf="@+id/view9" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="348dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName5" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12"
+        app:srcCompat="@drawable/buscar" />
+
+    <Button
+        android:id="@+id/btnbuscar"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:onClick="OnClick"
+        app:layout_constraintBottom_toBottomOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintStart_toStartOf="@+id/view12"
+        app:layout_constraintTop_toTopOf="@+id/view12" />
+
+    <ImageButton
+        android:id="@+id/btncursos"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:onClick="OnClick"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toStartOf="@+id/usuarios"
+        app:layout_constraintStart_toStartOf="@+id/barra"
+        app:layout_constraintTop_toTopOf="@+id/barra"
+        app:srcCompat="@drawable/globo" />
+
+    <ImageButton
+        android:id="@+id/usuarios"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnhome"
+        app:layout_constraintTop_toTopOf="@+id/barra"
+        app:srcCompat="@drawable/usuarios" />
+
+    <ImageButton
+        android:id="@+id/btnhome"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toStartOf="@+id/btncomentar"
+        app:layout_constraintTop_toTopOf="@+id/barra"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/btncomentar"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toStartOf="@+id/btnver"
+        app:layout_constraintTop_toTopOf="@+id/barra"
+        app:srcCompat="@drawable/comentario" />
+
+    <ImageButton
+        android:id="@+id/btnver"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/barra"
+        app:layout_constraintTop_toTopOf="@+id/barra"
+        app:srcCompat="@drawable/ojo" />
+
+    <TextView
+        android:id="@+id/nombreCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="220dp"
+        android:text="Nombre del curso"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+    <ImageView
+        android:id="@+id/fotocurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:srcCompat="@drawable/curso" />
+
+    <TextView
+        android:id="@+id/contenido"
+        android:layout_width="182dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="25dp"
+        android:text="En este curso de mecánica automotriz aprenderás a comprender la estructura de un automóvil, los diversos problemas que se pueden presentar y cómo se solucionan, analizando así las diversas herramientas que se utilizan. "
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreCurso" />
+
+    <TextView
+        android:id="@+id/parrafo"
+        android:layout_width="337dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Este curso de esta está dirigido a estudiantes y profesionales interesados en profundizar sus conocimientos con respecto a la mecánica, así como a la comprensión de los procesos de reparación y mantenimiento de un vehículo, que sin duda te permitirá desempeñarte mejor a la hora de trabajar."
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenido" />
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="223dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parrafo" />
+
+    <Button
+        android:id="@+id/continuar"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bordebtn"
+        android:text="Empezar"
+        android:textColor="@color/barramenu"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/borde_mapa"
+        android:text="Volver"
+        android:textColor="@color/barramenu"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
